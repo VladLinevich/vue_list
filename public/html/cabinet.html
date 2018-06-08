@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#1a1919">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="format-detection" content="telephone=no">
+        <title>Civenty</title>
+        <link rel="stylesheet" href="bundles/pedefault/vendor/select2.css">
+        <link rel="stylesheet" href="bundles/pedefault/vendor/jq-ui.css">
+        <link rel="stylesheet" href="bundles/pedefault/css/main.css">
+        <link rel="stylesheet" href="bundles/pedefault/css/blocks/cabinet-tml.css">
+    </head>
+
+    <body>
+        <div class="main-wrap">
+
+            <nav class="menu">
+  <div class="menu-top">
+    <div class="menu_item menu_item__top">
+      <div class="m-item menu_item-left">
+        <button class="open-menu m-toggle"></button>
+        <a href="#">
+          <img src="bundles/pedefault/img/svg/logo-dots.svg" alt="logo">
+        </a>
+      </div>
+      <div class="m-item menu_item-right">
+        <a href="#">Петролиум Трейдинг</a>
+        <svg class="svg-menu-close-dims menu-close m-toggle">
+          <use xlink:href="#menu-close" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+      </div>
+    </div>
+    <a class="menu_item active">
+      <div class="m-item menu_item-left">
+        <svg class="svg-pie-chart-dims">
+          <use xlink:href="#pie-chart" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+      </div>
+      <div class="m-item menu_item-right">Панель управления</div>
+    </a>
+    <a class="menu_item">
+      <div class="m-item menu_item-left">
+        <svg class="svg-list-2-dims">
+          <use xlink:href="#list-2" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+      </div>
+      <div class="m-item menu_item-right">Сделки</div>
+    </a>
+    <a class="menu_item">
+      <div class="m-item menu_item-left">
+        <svg class="svg-placeholder-dims">
+          <use xlink:href="#placeholder" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+      </div>
+      <div class="m-item menu_item-right">Трекинг вагонов</div>
+    </a>
+    <a class="menu_item">
+      <div class="m-item menu_item-left">
+        <svg class="svg-stick-man-dims">
+          <use xlink:href="#stick-man" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+      </div>
+      <div class="m-item menu_item-right">Пользователи</div>
+    </a>
+    <a class="menu_item disable">
+      <div class="m-item menu_item-left">
+        <svg class="svg-levels-dims">
+          <use xlink:href="#levels" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+      </div>
+      <div class="m-item menu_item-right">Другой раздел</div>
+    </a>
+    <a class="menu_item disable">
+      <div class="m-item menu_item-left">
+        <svg class="svg-menu-1-dims">
+          <use xlink:href="#menu-1" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+      </div>
+      <div class="m-item menu_item-right">Еще...</div>
+    </a>
+  </div>
+</nav>
+
+            <div class="content">
+
+                <header>
+  <div class="header-logo logo">
+    <img src="bundles/pedefault/img/svg/treider-logo.svg" alt="logo-treider" class="logo__pic">
+    <div class="logo__text">
+      <div class="logo__title">Ваш трейдер</div>
+      <div class="logo__name">Сергей бондаренко</div>
+    </div>
+  </div>
+
+  <div class="header__action-side">
+    <div class="search header-search">
+      <input type="text" class="search__input">
+      <button class="search__btn">
+        <svg class="svg-search-dims">
+          <use xlink:href="#search" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+      </button>
+    </div>
+    <a href="#" class="logout-btn">
+      <svg class="svg-logout-dims">
+        <use xlink:href="#logout" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+      </svg>
+    </a>
+    <a class="avatar" href="#" style="background-image: url(bundles/pedefault/img/svg/avatar.svg)"></a>
+  </div>
+
+</header>
+
+                <div class="p-header">
+
+  <div class="p-header__menu">
+    <div class="p-header__title">Сделки</div>
+    <nav class="p-header__nav">
+        <a class="tab-link" href="#">Отчет о взаиморасчетах</a>
+        <a class="tab-link" href="#">Отправить документ</a>
+        <a class="tab-link active" href="#">Расчет ж/д тарифа</a>
+        <a class="tab-link" href="#">Отзыв о сделке</a>
+        <a class="tab-link" href="#">Графики динамики цен</a>
+    </nav>
+    <div class="p-header__graph">
+      <img src="bundles/pedefault/img/svg/graph.svg" alt="graph">
+    </div>
+  </div>
+
+  <div class="p-header__sort">
+
+    <div class="form-group form-group_default-select item">
+      <label class="form-group__label">Сортировать
+        <div class="input-wrap">
+          <select class="default-select" name="state">
+            <option value="AL">по дате измениний</option>
+            <option value="WY">по новому</option>
+            <option value="WY">по старому</option>
+            <option value="WY">как-то по другому</option>
+          </select>
+        </div>
+      </label>
+    </div>
+
+    <div class="form-group form-group_filter-links item">
+      <label class="form-group__label">Показывать по
+        <div class="input-wrap">
+          <a class="filter-link" href="#">20</a>
+          <a class="filter-link active" href="#">40</a>
+          <a class="filter-link" href="#">60</a>
+          <a class="filter-link" href="#">100</a>
+        </div>
+      </label>
+    </div>
+
+    <div class="form-group form-group_datepicker item">
+      <label class="form-group__label">Отобразить период за
+        <div class="datepicker-wrap">
+          <span class="datepicker-block">
+            <img src="bundles/pedefault/img/svg/calendar.svg" alt="calendar"> c
+            <span class="input-wrap">
+              <input type="text" placeholder="12.01.2018" class="default-input datepicker-input">
+            </span>
+          </span>
+          <span class="datepicker-block"> по
+            <span class="input-wrap">
+              <input type="text" placeholder="12.01.2018" class="default-input datepicker-input">
+            </span>
+          </span>
+        </div>
+      </label>
+    </div>
+
+    <div class="result-text item">
+      <p>Оплачено - 20 433 754 056 руб</p>
+      <p class="accent">Отгружено - 20 433 754 т</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+                <div class="table">
+  <div class="t__header item">
+    <div class="c__item c__number">№</div>
+    <div class="c__item c__name">
+      <div class="form-group form-group_default-select ">
+        <label class="form-group__label">
+          <div class="input-wrap">
+            <select class="default-select" name="state">
+              <option value="AL">Продукт</option>
+              <option value="WY">Продукт 1</option>
+              <option value="WY">Продукт 2</option>
+              <option value="WY">Продукт 3</option>
+            </select>
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="c__item c_arrow"><a href="#">Вес/количество</a></div>
+    <div class="c__item c__price c_arrow"><a href="#">Цена</a></div>
+    <div class="c__item c_arrow"><a href="#">Оплаты / Загрузки</a>   </div>
+    <div class="c__item c_arrow"><a href="#">Станция отправления</a>  </div>
+    <div class="c__item c_arrow"><a href="#">Станция назначения</a>  </div>
+  </div>
+
+  <div class="t__body">
+
+    <div class="t__row">
+      <div class="c__item c__number">1</div>
+      <div class="c__item c__name"><p>Стабильный газовый конденсат</p></div>
+      <div class="c__item">
+        <p>100 000 т</p>
+        <p class="text-small">72 320 т - отгружено</p>
+      </div>
+      <div class="c__item c__price">21 768 000 руб</div>
+      <div class="c__item">13.02.2018 / 24.03.2018</div>
+      <div class="c__item">4880 White Parkway Apt. 024</div>
+      <div class="c__item">941 Ernser Station Apt. 167</div>
+    </div>
+    <div class="t__row">
+      <div class="c__item c__number">2</div>
+      <div class="c__item c__name"><p>Дизельное топливо</p></div>
+      <div class="c__item">
+        <p>100 000 т</p>
+        <p class="text-small">72 320 т - отгружено</p>
+      </div>
+      <div class="c__item c__price">21 768 000 руб</div>
+      <div class="c__item">13.02.2018 / 24.03.2018</div>
+      <div class="c__item">4880 White Parkway Apt. 024</div>
+      <div class="c__item">941 Ernser Station Apt. 167</div>
+    </div>
+    <div class="t__row">
+      <div class="c__item c__number">3</div>
+      <div class="c__item c__name"><p>АИ-92 и АИ-95</p></div>
+      <div class="c__item">
+        <p>100 000 т</p>
+        <p class="text-small">72 320 т - отгружено</p>
+      </div>
+      <div class="c__item c__price">21 768 000 руб</div>
+      <div class="c__item">13.02.2018 / 24.03.2018</div>
+      <div class="c__item">4880 White Parkway Apt. 024</div>
+      <div class="c__item">941 Ernser Station Apt. 167</div>
+    </div>
+    <div class="t__row">
+      <div class="c__item c__number">11</div>
+      <div class="c__item c__name"><p>Авиационное топливо или авиакеросин, Бензин, Дизельное топливо</p></div>
+      <div class="c__item">
+        <p>100 000 т</p>
+        <p class="text-small">72 320 т - отгружено</p>
+      </div>
+      <div class="c__item c__price">21 768 000 руб</div>
+      <div class="c__item">13.02.2018 / 24.03.2018</div>
+      <div class="c__item">4880 White Parkway Apt. 024</div>
+      <div class="c__item">941 Ernser Station Apt. 167</div>
+    </div>
+    <div class="t__row">
+      <div class="c__item c__number">11</div>
+      <div class="c__item c__name"><p>Авиационное топливо или авиакеросин, Бензин, Дизельное топливо</p></div>
+      <div class="c__item">
+        <p>100 000 т</p>
+        <p class="text-small">72 320 т - отгружено</p>
+      </div>
+      <div class="c__item c__price">21 768 000 руб</div>
+      <div class="c__item">13.02.2018 / 24.03.2018</div>
+      <div class="c__item">4880 White Parkway Apt. 024</div>
+      <div class="c__item">941 Ernser Station Apt. 167</div>
+    </div>
+    <div class="t__row">
+      <div class="c__item c__number">11</div>
+      <div class="c__item c__name"><p>Авиационное топливо или авиакеросин, Бензин, Дизельное топливо</p></div>
+      <div class="c__item">
+        <p>100 000 т</p>
+        <p class="text-small">72 320 т - отгружено</p>
+      </div>
+      <div class="c__item c__price">21 768 000 руб</div>
+      <div class="c__item">13.02.2018 / 24.03.2018</div>
+      <div class="c__item">4880 White Parkway Apt. 024</div>
+      <div class="c__item">941 Ernser Station Apt. 167</div>
+    </div>
+    <div class="t__row">
+      <div class="c__item c__number">11</div>
+      <div class="c__item c__name"><p>Авиационное топливо или авиакеросин, Бензин, Дизельное топливо</p></div>
+      <div class="c__item">
+        <p>100 000 т</p>
+        <p class="text-small">72 320 т - отгружено</p>
+      </div>
+      <div class="c__item c__price">21 768 000 руб</div>
+      <div class="c__item">13.02.2018 / 24.03.2018</div>
+      <div class="c__item">4880 White Parkway Apt. 024</div>
+      <div class="c__item">941 Ernser Station Apt. 167</div>
+    </div>
+
+
+  </div>
+</div>
+
+                <div class="p-pagination">
+                    <div class="pagination">
+  <a class="pag-link  pag-link_prev">
+    <svg class="svg-pagination-arrow-left-dims">
+      <use xlink:href="#pagination-arrow-left" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+    </svg>
+  </a>
+  <a href="#" class="pag-link">1</a>
+  <a href="#" class="pag-link active">2</a>
+  <a href="#" class="pag-link">3</a>
+  <a href="#" class="pag-link">4</a>
+  <span class="pag-link pag-link_dots" >...</span>
+  <a href="#" class="pag-link">312</a>
+  <a class="pag-link  pag-link_next">
+    <svg class="svg-pagination-arrow-right-dims">
+      <use xlink:href="#pagination-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+    </svg>
+  </a>
+</div>
+                </div>
+
+
+
+                <footer>
+
+
+                    <div class="footer">
+  <div class="footer-item_left">
+    <p>В этом разделе вы можете просматривать и редактировать</p>
+    <div class="block-information">
+      <p>Официальный сайт
+        <span class="underline"><a href="#">Петролеум Трейдинг</a></span>
+      </p>
+    </div>
+  </div>
+  <div class="footer-item_right">
+    <form action="#" method="post">
+      <input type="text"  class="footer_massage" name="Message" value="" placeholder="Message">
+      <button type="submit">
+        <img src="bundles/pedefault/img/svg/ic-subdirectory-arrow-left.svg">
+      </button>
+    </form>
+  </div>
+</div>
+
+
+                </footer>
+            </div>
+
+            <div class="panel-wrap">
+  <div class="panel-box panel-box_deal-info">
+    <div class="panel-header">
+
+      <div class="item-box item-box_icon">
+        <div class="item-box__icon">
+          <img src="bundles/pedefault/img/svg/time_left.svg" alt="time-left">
+        </div>
+        <div class="item-box__text">
+          <div class="item-box__header">Статус</div>
+          <div class="item-box__content">В работе</div>
+        </div>
+      </div>
+
+      <div class="item-box item-box_icon">
+        <div class="item-box__icon">
+          <img src="bundles/pedefault/img/svg/file-download.svg" alt="file-download">
+        </div>
+        <div class="item-box__text">
+          <div class="item-box__header">Номер контракта</div>
+          <div class="item-box__content">АЕ-2345-986</div>
+        </div>
+      </div>
+
+      <div class="item-box">
+        <div class="item-box__icon"></div>
+        <div class="item-box__text">
+          <div class="item-box__header">Цена</div>
+          <div class="item-box__content">1 768 000 руб.</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="panel-content panel-content_left">
+      <div class="panel-content__header">
+        Дизельное топливо
+      </div>
+
+      <div class="panel-content__item">
+
+        <div class="item-box item-box_icon item">
+          <div class="item-box__icon">
+            <img src="bundles/pedefault/img/svg/calendar.svg" alt="time-left">
+          </div>
+          <div class="item-box__text">
+            <div class="item-box__header">Дата оплаты</div>
+            <div class="item-box__content">2 декабря 2017</div>
+          </div>
+        </div>
+
+        <div class="item-box item">
+          <div class="item-box__icon"></div>
+          <div class="item-box__text">
+            <div class="item-box__header">Дата отгрузки</div>
+            <div class="item-box__content">12 декабря 2017</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="panel-content__item panel-content__item_section">
+
+        <div class="item-box item-box_icon item">
+          <div class="item-box__icon">
+            <img src="bundles/pedefault/img/svg/loaction-start.svg" alt="loaction-start">
+          </div>
+          <div class="item-box__text">
+            <div class="item-box__header">Станция отправления</div>
+            <div class="item-box__content">9759 Barrett Motorway Apt. 085</div>
+          </div>
+        </div>
+
+        <div class="item-box item-box_icon item">
+          <div class="item-box__icon">
+            <img src="bundles/pedefault/img/svg/location-end.svg" alt="loaction-end">
+          </div>
+          <div class="item-box__text">
+            <div class="item-box__header">Станция назначения</div>
+            <div class="item-box__content">9759 Barrett Motorway Apt. 085</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="panel-content__item">
+
+        <div class="item-box item-box_icon item">
+          <div class="item-box__icon">
+            <img src="bundles/pedefault/img/svg/target.svg" alt="time-left">
+          </div>
+          <div class="item-box__text">
+            <div class="item-box__header">Номер вагона(ов)</div>
+            <div class="item-box__content item-box__content-margin-top">
+              <span class="box-border">132</span>
+              <span class="box-border">437</span>
+              <span class="box-border">469</span>
+              <span class="box-border">747</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+     </div>
+  </div>
+  <div class="panel-box">
+    <div class="panel-header panel-header_dark">
+
+      <div class="item-box">
+        <div class="item-box__icon"></div>
+        <div class="item-box__text">
+          <div class="item-box__header">Вес по сделке</div>
+          <div class="item-box__content item-box__content-accent">100 000 т</div>
+        </div>
+      </div>
+
+
+
+      <div class="item-box">
+        <div class="item-box__icon"></div>
+        <div class="item-box__text">
+          <div class="item-box__header">Отгружено</div>
+          <div class="item-box__content item-box__content-danger">72 300 т</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="panel-content panel-content_info">
+
+      <div class="item item_header">
+        <div class="item-box">
+          <div class="item-box__icon"></div>
+          <div class="item-box__text">
+            <div class="item-box__header">Не отгружено</div>
+            <div class="item-box__content">372 700 т</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="document-list">
+        <p class="document-list__title">Документы</p>
+
+        <a  href="#" class="document-link">
+          <div class="item-box item-box_icon">
+            <div class="item-box__icon">
+              <img src="bundles/pedefault/img/svg/file-dowload_small.svg" alt="file-dowload_small">
+            </div>
+            <div class="item-box__text">
+              <div class="item-box__header">Контракт</div>
+              <div class="item-box__content">9АЕ-2345-986</div>
+            </div>
+          </div>
+        </a>
+
+        <a  href="#" class="document-link">
+          <div class="item-box item-box_icon">
+            <div class="item-box__icon">
+              <img src="bundles/pedefault/img/svg/file-dowload_small.svg" alt="file-dowload_small">
+            </div>
+            <div class="item-box__text">
+              <div class="item-box__header">Приложение</div>
+              <div class="item-box__content">67652</div>
+            </div>
+          </div>
+        </a>
+
+        <a  href="#" class="document-link">
+          <div class="item-box item-box_icon">
+            <div class="item-box__icon">
+              <img src="bundles/pedefault/img/svg/file-dowload_small.svg" alt="file-dowload_small">
+            </div>
+            <div class="item-box__text">
+              <div class="item-box__header">Ж/Д накладная</div>
+              <div class="item-box__content">6437</div>
+            </div>
+          </div>
+        </a>
+
+        <a  href="#" class="document-link">
+          <div class="item-box item-box_icon">
+            <div class="item-box__icon">
+              <img src="bundles/pedefault/img/svg/file-dowload_small.svg" alt="file-dowload_small">
+            </div>
+            <div class="item-box__text">
+              <div class="item-box__header">Дополнительное соглашение</div>
+              <div class="item-box__content">47</div>
+            </div>
+          </div>
+        </a>
+
+        <a  href="#" class="document-link">
+          <div class="item-box item-box_icon">
+            <div class="item-box__icon">
+              <img src="bundles/pedefault/img/svg/file-dowload_small.svg" alt="file-dowload_small">
+            </div>
+            <div class="item-box__text">
+              <div class="item-box__header">Счет фактура</div>
+              <div class="item-box__content">846</div>
+              </div>
+            </div>
+         </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+        </div>
+
+
+        <div class="svg-block">
+            <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 10 10" id="arrow-left" xmlns="http://www.w3.org/2000/svg"><path class="ast0" d="M5 10l.9-.9-3.5-3.5H10V4.4H2.4L5.9.9 5 0 0 5l5 5z"/></symbol><symbol viewBox="0 0 10 10" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 0l-.881.881 3.487 3.494H0v1.25h7.606L4.12 9.119 5 10l5-5z"/></symbol><symbol viewBox="0 0 32 30" id="levels" xmlns="http://www.w3.org/2000/svg"><path d="M3.96 29.196a.803.803 0 1 0 1.607 0V9.475c2.248-.386 3.974-2.341 3.974-4.702A4.777 4.777 0 0 0 4.77 0 4.777 4.777 0 0 0 0 4.773a4.776 4.776 0 0 0 3.973 4.702v19.72H3.96zM1.588 4.773a3.178 3.178 0 0 1 3.17-3.171 3.178 3.178 0 0 1 3.168 3.171 3.178 3.178 0 0 1-3.169 3.172 3.173 3.173 0 0 1-3.17-3.172zM20.72 25.227c0 2.628-2.156 4.773-4.783 4.773a4.777 4.777 0 0 1-4.77-4.773c0-2.36 1.725-4.316 3.973-4.702V.805a.803.803 0 1 1 1.607 0v19.72a4.776 4.776 0 0 1 3.973 4.702zm-7.94 0a3.178 3.178 0 0 0 3.17 3.171 3.178 3.178 0 0 0 3.17-3.171 3.178 3.178 0 0 0-3.17-3.172 3.178 3.178 0 0 0-3.17 3.172zM27.224 30a.784.784 0 0 1-.79-.804V9.475a4.776 4.776 0 0 1-3.974-4.702A4.777 4.777 0 0 1 27.23 0 4.777 4.777 0 0 1 32 4.773c0 2.36-1.725 4.316-3.973 4.702v19.72c0 .445-.36.805-.804.805zm-3.17-25.227a3.17 3.17 0 0 0 3.17 3.172 3.178 3.178 0 0 0 3.17-3.172 3.178 3.178 0 0 0-3.17-3.171 3.178 3.178 0 0 0-3.17 3.171z"/></symbol><symbol viewBox="0 0 35 30" id="list-2" xmlns="http://www.w3.org/2000/svg"><path d="M10.095.254a.87.87 0 0 1 .007 1.22l-6.08 6.031a.862.862 0 0 1-1.223 0L.254 4.952a.859.859 0 0 1 0-1.22.863.863 0 0 1 1.223 0l1.93 1.94L8.872.253a.863.863 0 0 1 1.223 0zm-4.92 10.863a3.895 3.895 0 0 1 3.888 3.88 3.89 3.89 0 0 1-3.888 3.88 3.89 3.89 0 0 1-3.888-3.88 3.89 3.89 0 0 1 3.888-3.88zm0 6.03a2.158 2.158 0 0 0 2.156-2.15 2.158 2.158 0 0 0-2.156-2.152 2.158 2.158 0 0 0-2.156 2.151c0 1.186.968 2.152 2.156 2.152zm0 5.094a3.89 3.89 0 0 1 3.888 3.88A3.89 3.89 0 0 1 5.175 30a3.89 3.89 0 0 1-3.888-3.88 3.89 3.89 0 0 1 3.888-3.88zm0 6.024c1.187 0 2.149-.96 2.156-2.152a2.158 2.158 0 0 0-2.156-2.151 2.158 2.158 0 0 0-2.156 2.151c0 1.185.968 2.152 2.156 2.152zm28.234-15.787a.868.868 0 1 1 0 1.735H13.361a.868.868 0 1 1 0-1.735h20.048zm0 3.309a.868.868 0 1 1 0 1.735H13.361a.868.868 0 1 1 0-1.735h20.048zm-20.048 9.536a.868.868 0 1 1 0-1.735h20.048a.868.868 0 1 1 0 1.735H13.361zm20.048 3.316H13.361a.868.868 0 1 1 0-1.736h20.048a.868.868 0 1 1 0 1.736zM12.5 2.222c0-.48.381-.868.862-.868h20.055a.868.868 0 1 1 0 1.736H13.368a.868.868 0 0 1-.87-.868zM33.41 4.67a.868.868 0 1 1 0 1.735H13.361a.868.868 0 1 1 0-1.735h20.048z"/></symbol><symbol viewBox="0 0 512 512" id="logout" xmlns="http://www.w3.org/2000/svg"><path d="M505.664 243.739l-54.783-38.622c-9.926-6.997-23.645.128-23.645 12.26v23.622h-263.04c-8.284 0-15.001 6.716-15.001 15.001s6.717 15 15.001 15h263.038v23.621c0 12.212 13.792 19.204 23.644 12.26l54.783-38.622c8.366-5.894 8.535-18.492.003-24.52z"/><path d="M430.471 352.317c-7.169-4.146-16.347-1.698-20.496 5.474-35.236 60.916-101.103 101.811-176.372 101.811-112.266 0-203.602-91.336-203.602-203.602S121.337 52.398 233.603 52.398c75.319 0 141.156 40.933 176.371 101.809 4.148 7.172 13.328 9.619 20.496 5.474 7.171-4.148 9.621-13.325 5.474-20.496C395.418 69.127 319.729 22.397 233.603 22.397 104.49 22.397 0 126.876 0 256c0 129.113 104.479 233.603 233.603 233.603 86.163 0 161.833-46.763 202.342-116.79 4.147-7.171 1.697-16.347-5.474-20.496z"/></symbol><symbol viewBox="0 0 32 31" id="menu-1" xmlns="http://www.w3.org/2000/svg"><path d="M16 0a3.896 3.896 0 0 0-3.889 3.895A3.892 3.892 0 0 0 16 7.789a3.892 3.892 0 0 0 3.889-3.894A3.896 3.896 0 0 0 16 0zm0 6.183a2.289 2.289 0 0 1 0-4.577 2.289 2.289 0 0 1 0 4.577zM28.111 0A3.896 3.896 0 0 1 32 3.895a3.892 3.892 0 0 1-3.889 3.894 3.892 3.892 0 0 1-3.888-3.894A3.896 3.896 0 0 1 28.11 0zm0 6.183a2.293 2.293 0 0 0 2.285-2.288 2.293 2.293 0 0 0-2.285-2.289 2.289 2.289 0 0 0 0 4.577zM3.89 0a3.892 3.892 0 0 1 3.888 3.895A3.892 3.892 0 0 1 3.89 7.789 3.892 3.892 0 0 1 0 3.895 3.896 3.896 0 0 1 3.889 0zm0 6.183a2.289 2.289 0 0 0 0-4.577 2.293 2.293 0 0 0-2.285 2.289A2.293 2.293 0 0 0 3.89 6.183zM16 11.605a3.896 3.896 0 0 1 3.889 3.895A3.892 3.892 0 0 1 16 19.395a3.892 3.892 0 0 1-3.889-3.895A3.896 3.896 0 0 1 16 11.605zm0 6.183a2.289 2.289 0 0 0 0-4.577 2.289 2.289 0 0 0 0 4.577zm12.111-6.183A3.896 3.896 0 0 1 32 15.5a3.892 3.892 0 0 1-3.889 3.895 3.892 3.892 0 0 1-3.888-3.895 3.896 3.896 0 0 1 3.888-3.895zm0 6.183a2.293 2.293 0 0 0 2.285-2.288 2.293 2.293 0 0 0-2.285-2.288 2.289 2.289 0 0 0 0 4.576zM3.89 11.605A3.892 3.892 0 0 1 7.777 15.5a3.892 3.892 0 0 1-3.888 3.895A3.892 3.892 0 0 1 0 15.5a3.896 3.896 0 0 1 3.889-3.895zm0 6.183a2.289 2.289 0 0 0 0-4.576 2.289 2.289 0 0 0 0 4.576zM16 23.211a3.9 3.9 0 0 1 3.889 3.894A3.892 3.892 0 0 1 16 31a3.896 3.896 0 0 1-3.889-3.895A3.896 3.896 0 0 1 16 23.211zm0 6.183a2.289 2.289 0 0 0 0-4.577 2.289 2.289 0 0 0 0 4.577zm12.111-6.183A3.9 3.9 0 0 1 32 27.105 3.892 3.892 0 0 1 28.111 31a3.896 3.896 0 0 1-3.888-3.895 3.896 3.896 0 0 1 3.888-3.894zm0 6.183a2.289 2.289 0 0 0 0-4.577 2.289 2.289 0 0 0 0 4.577zM3.89 23.21a3.896 3.896 0 0 1 3.888 3.894A3.892 3.892 0 0 1 3.89 31 3.896 3.896 0 0 1 0 27.105a3.896 3.896 0 0 1 3.889-3.894zm0 6.183a2.289 2.289 0 0 0 0-4.577 2.289 2.289 0 0 0 0 4.577z"/></symbol><symbol viewBox="0 0 26 20" id="menu-close" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M26 8.917v2.166H12.816l6.045 6.056-1.528 1.528L8.667 10l8.666-8.667 1.539 1.528-6.056 6.056H26zM0 .25h2.167v19.5H0V.25z"/></symbol><symbol viewBox="0 0 6.2 10.1" id="pagination-arrow-left" xmlns="http://www.w3.org/2000/svg"><path class="hst0" d="M6.2 8.9L2.4 5.1l3.8-3.8L5 .1l-5 5 5 5 1.2-1.2z"/></symbol><symbol viewBox="0 0 6.2 10.1" id="pagination-arrow-right" xmlns="http://www.w3.org/2000/svg"><path class="ist0" d="M0 1.3l3.8 3.8L0 8.9l1.2 1.2 5-5-5-5L0 1.3z"/></symbol><symbol viewBox="0 0 32 32" id="pie-chart" xmlns="http://www.w3.org/2000/svg"><path d="M18.688 14.112h12.507c.445 0 .805-.36.805-.804C32 5.967 26.034 0 18.695 0a.803.803 0 0 0-.805.798v12.51c0 .451.354.804.798.804zm.805-12.476c5.815.392 10.48 5.057 10.872 10.874H19.493V1.636zM14.548 32C6.528 32 0 25.477 0 17.456 0 9.434 6.522 2.91 14.541 2.91c.445 0 .805.36.805.805V16.65h12.939c.444 0 .804.36.804.805C29.09 25.477 22.567 32 14.548 32zm-.805-27.46C6.98 4.954 1.61 10.594 1.61 17.457c0 7.138 5.802 12.941 12.939 12.941 6.862 0 12.494-5.371 12.912-12.137H14.548a.804.804 0 0 1-.805-.804V4.54z"/></symbol><symbol viewBox="0 0 26 32" id="placeholder" xmlns="http://www.w3.org/2000/svg"><path d="M12.99 6.376c-3.711 0-6.725 3.005-6.725 6.691s3.014 6.697 6.725 6.697c3.712 0 6.726-3.005 6.726-6.69 0-3.686-3.014-6.698-6.726-6.698zm0-6.376C20.156 0 25.987 5.8 26 12.923c0 .825-.079 1.65-.237 2.455a12.65 12.65 0 0 1-.96 2.972c-1.33 3.123-4.258 7.98-10.609 13.224a1.88 1.88 0 0 1-2.382 0c-6.356-5.25-9.285-10.101-10.62-13.25a12.314 12.314 0 0 1-.87-2.54 4.076 4.076 0 0 1-.091-.432 13 13 0 0 1-.172-3.686C.678 5.244 6.041.23 12.53.006 12.682 0 12.84 0 12.99 0zm0 18.16c-2.823 0-5.113-2.284-5.113-5.086 0-2.802 2.297-5.087 5.113-5.087 2.817 0 5.113 2.285 5.113 5.087 0 2.802-2.29 5.086-5.113 5.086zm11.174-3.057c.138-.733.21-1.453.21-2.173 0-6.383-5.33-11.542-11.785-11.32C6.903 1.807 2.21 6.2 1.665 11.823a11.471 11.471 0 0 0 .151 3.254c0 .013.007.026.007.04.007.032.026.137.066.307.178.779.434 1.532.77 2.252 1.276 3.005 4.073 7.62 10.173 12.661a.28.28 0 0 0 .165.06.267.267 0 0 0 .164-.06c6.1-5.034 8.89-9.65 10.16-12.635.343-.746.6-1.5.777-2.272a3.88 3.88 0 0 0 .066-.327z"/></symbol><symbol viewBox="0 0 22 23" id="search" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15.712 14.5h-.988l-.35-.338a8.089 8.089 0 0 0 1.963-5.287A8.125 8.125 0 0 0 8.212.75 8.125 8.125 0 0 0 .087 8.875 8.125 8.125 0 0 0 8.212 17a8.089 8.089 0 0 0 5.287-1.963l.338.35v.988l6.25 6.238 1.862-1.863-6.237-6.25zm-7.5 0a5.617 5.617 0 0 1-5.625-5.625A5.617 5.617 0 0 1 8.212 3.25a5.617 5.617 0 0 1 5.625 5.625A5.617 5.617 0 0 1 8.212 14.5z"/></symbol><symbol viewBox="0 0 23 32" id="stick-man" xmlns="http://www.w3.org/2000/svg"><path d="M16.324 8.2c2.213 0 4.01-1.838 4.01-4.1 0-2.263-1.797-4.1-4.01-4.1-2.212 0-4.009 1.837-4.009 4.1 0 2.262 1.797 4.1 4.01 4.1zm0-6.598c1.35 0 2.443 1.118 2.443 2.498 0 1.38-1.093 2.497-2.443 2.497-1.349 0-2.442-1.118-2.442-2.497 0-1.38 1.093-2.498 2.442-2.498zM7.078 8.199C4.866 8.2 3.07 6.362 3.07 4.1 3.07 1.838 4.866 0 7.08 0c2.212 0 4.009 1.837 4.009 4.1 0 2.262-1.797 4.1-4.01 4.1zm0-6.597C5.73 1.602 4.636 2.72 4.636 4.1c0 1.38 1.093 2.497 2.442 2.497 1.35 0 2.443-1.118 2.443-2.497 0-1.38-1.093-2.498-2.443-2.498zM20.903 28.75c0 1.785-1.42 3.237-3.159 3.25h-3.62a.795.795 0 0 1-.786-.804c0-.445.352-.805.787-.805h3.619c.882 0 1.599-.732 1.599-1.634v-7.363c0-.333.204-.634.511-.752.946-.353 1.58-1.281 1.58-2.308v-5.211c0-1.36-1.081-2.465-2.411-2.465h-3.421a.795.795 0 0 1-.787-.804c0-.445.352-.805.787-.805h3.42c2.194 0 3.978 1.825 3.978 4.067v5.212a4.09 4.09 0 0 1-2.097 3.576v6.846zm-6.759-15.634v5.212a4.09 4.09 0 0 1-2.097 3.576v6.846c0 1.785-1.42 3.237-3.165 3.237h-3.62c-1.745 0-3.165-1.452-3.165-3.237v-6.846A4.09 4.09 0 0 1 0 18.328v-5.212C0 10.874 1.784 9.05 3.977 9.05h6.19c2.193 0 3.977 1.825 3.977 4.067zm-1.567 5.212h.013v-5.212c0-1.36-1.08-2.465-2.41-2.465H3.99c-1.33 0-2.41 1.105-2.41 2.465v5.218c0 1.027.632 1.955 1.579 2.308a.805.805 0 0 1 .511.752v7.356c0 .903.716 1.635 1.599 1.635h3.619c.882 0 1.599-.732 1.599-1.635v-7.362c0-.334.204-.634.511-.752.946-.353 1.58-1.282 1.58-2.308z"/></symbol></svg>
+        </div>
+
+
+
+        <script src="bundles/pedefault/js/bundle.js"></script>
+    </body>
+
+</html>

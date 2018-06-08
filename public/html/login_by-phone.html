@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#1a1919">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Civenty</title>
+    <link rel="stylesheet" href="/bundles/pedefault/css/main.css">
+    <link rel="stylesheet" href="/bundles/pedefault/css/pages/login-register.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo"><a href="/"><img src="/bundles/pedefault/img/svg/logo.svg" alt="logo"></a></div>
+      <div class="header-title">
+        <h1> Личный кабинет</h1>
+        <h2> Petroleum Trading</h2>
+      </div>
+      <div class="header-button"><a class="button button_medium button_white" href="#">Регистрация</a><a class="icon" href="#"><img src="/bundles/pedefault/img/svg/add-new-user.svg"></a></div>
+    </header>
+    <body>       
+      <div class="sing-in">
+        <div class="fake-popup">
+          <div class="fake-popup__title">Вход</div>
+          <form id="sing-in_by-phone">
+            <div class="form-group has-error">
+              <label class="form-group__label">Ваш номер телефона <span class="error">- поле заполнено не верно</span>
+                <div class="input-wrap">
+                  <input class="default-input default-phone" type="text" id="phone-sing-in" placeholder="+7(000)000-00-00">
+                </div>
+              </label>
+            </div>
+            <div class="form-group has-error">
+              <label class="form-group__label">Пароль<span class="error">- неверный пароль</span>
+                <div class="input-wrap">
+                  <input class="default-input" type="password" placeholder="•••••••">
+                </div>
+              </label>
+            </div>
+            <div class="send"><a class="link" href="#">Напомнить пароль</a>
+              <button class="button button_small">Вход</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="center">
+        <button class="button button_large button_black button_icon"> 
+          <svg class="icon svg-arrow-right-dims">
+            <use xlink:href="#arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg><span>Войти используя e-mail</span>
+        </button>
+      </div>
+    </body>
+    <footer>
+      <div class="sprite-block"><?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 10 10" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 0l-.881.881 3.487 3.494H0v1.25h7.606L4.12 9.119 5 10l5-5z"/></symbol></svg></div>
+    </footer>
+    <script src="/bundles/pedefault/js/bundle.js"></script>
+    <script src="/bundles/pedefault/js/login-page.js"></script>
+  </body>
+</html>
