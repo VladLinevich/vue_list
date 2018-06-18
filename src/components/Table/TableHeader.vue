@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="c__item c_arrow">
-      <a href="#">Вес/количество</a>
+      <a href="#" @click.prevent="log">Вес/количество</a>
     </div>
     <div class="c__item c__price c_arrow">
       <a href="#">Цена</a>
@@ -36,7 +36,13 @@
 <script>
 
 export default {
-  name: 'TableHeader'
+  name: 'TableHeader',
+
+  methods: {
+    log(){
+      console.log(this)
+    }
+  }
 }
     
 </script>
